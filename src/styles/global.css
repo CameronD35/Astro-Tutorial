@@ -1,14 +1,32 @@
 html {
-  background-color: #f1f5f9;
+  background-color: var(--custom-white);
   font-family: system-ui;
+}
+
+:root{
+
+--custom-dark-brown: rgba(31, 23, 6, 1);
+--custom-brown: rgba(83, 57, 42, 1);
+--custom-tan: rgba(172, 132, 90, 1);
+--custom-light-brown: rgba(88, 80, 71, 1);
+--custom-green: rgba(69, 107, 90, 1);
+--custom-white: rgba(225, 226, 226, 1);
+
+
 }
 
 body {
   margin: 0 auto;
   width: 100%;
+}
+
+.content {
+
   max-width: 120ch;
   padding: 1rem;
   line-height: 1.5;
+  color: var(--custom-dark-brown)
+
 }
 
 nav {
@@ -32,7 +50,7 @@ h1 {
 
 .menu {
 
-  background-color: #0d0950;
+  background-color: var(--custom-dark-brown);
   border: none;
   color: #fff;
   font-size: 1.2rem;
@@ -58,14 +76,14 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #0d0950;
+  color: var(--custom-dark-brown);
 
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
 
-  background-color: #ff9776;
+  background-color: var(--custom-green);
   
 }
 

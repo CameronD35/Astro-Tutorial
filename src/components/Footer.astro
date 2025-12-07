@@ -1,19 +1,32 @@
 ---
 import Social from './Social.astro';
+
+// force footer to bottom of page if content height smaller than screen height
 ---
 
-<footer>
-    <Social platform="twitter" username="ballsinyomouf" />
+<footer class="footer">
+    <Social platform="twitter" username="ballsinmoufff" />
     <Social platform="github" username="CameronD35" />
     <Social platform="youtube" username="@MarzTGLive" />
 </footer>
 
 <style>
+
     footer {
 
         display: flex;
         gap: 1rem;
         margin-top: 2rem;
 
+        background-color: purple;
+
     }
+
+    .fixed {
+
+        position: fixed;
+        bottom: 0%;
+
+    }
+
 </style>

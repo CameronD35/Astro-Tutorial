@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Content from '../components/Content.astro';
 import '../styles/global.css';
 
 const { pageTitle } = Astro.props;
@@ -16,14 +17,22 @@ const { pageTitle } = Astro.props;
 	</head>
 	<body>
 		<Header />
-		<h1>{pageTitle}</h1>
-        <slot />
+
+		<Content>
+
+			<h1>{pageTitle}</h1>
+        	<slot />
+
+		</Content>
 
 		<Footer />
 
 		<script>
 
 			import "../scripts/menu.js"; 
+			import setFooterFixing from "../scripts/footerManage.js";
+
+			setFooterFixing();
 
 		</script>
 	</body>
