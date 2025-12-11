@@ -1,0 +1,23 @@
+---
+const { height, sectionTitle, bgImg } = Astro.props;
+---
+
+<div class="section" style=`background-image: url(${bgImg.src});`>
+
+    <slot/>
+
+</div>
+
+<style define:vars={{ height }}>
+
+    .section {
+
+        width: 100vw;
+        height: var(--height);
+
+
+        background-size: cover;
+
+    }
+
+</style>
